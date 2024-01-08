@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidad 5 - Ejercicio 2</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>¡DÁTE DE ALTA EN NUESTRO VIDEOCLUB!</h1>
+    <form action="#" method="post" onsubmit="return validarFormulario()">
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" required minlength="3" maxlength="30" placeholder="Ej. Cristina">
+        
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" name="apellidos" id="apellidos" required minlength="3" maxlength="60" placeholder="Ej. Silvestre Toro">
+        
+        <label for="direccion">Dirección:</label>
+        <input type="text" name="direccion" id="direccion" required minlength="3" maxlength="50" placeholder="Ej. Calle Falsa 123">
+        
+        <label for="poblacion">Población:</label>
+        <input type="text" name="poblacion" id="poblacion" required minlength="3" maxlength="30" placeholder="Ej. Burjassot">
+        
+        <label for="codPostal">Código Postal:</label>
+        <input type="text" name="codPostal" id="codPostal" required pattern="\d{5}" placeholder="Ej. 46100">
+
+        <label for="telefono">Teléfono Fijo:</label>
+        <input type="tel" name="telefono" id="telefono" pattern="\(\d{3}\)\d{3}-\d{3}" required placeholder="Ej. (963)498-473">
+
+        <label for="movil">Teléfono Móvil:</label>
+        <input type="tel" name="movil" id="movil" pattern="6\d{2}-\d{3}-\d{3}" required placeholder="Ej. 687-458-785 (Debe empezar por 6)">
+
+        <label for="dni">DNI:</label>
+        <input type="text" id="dni" name="dni" pattern="\d{2}\.\d{3}\.\d{3}-[A-Za-z]" required placeholder="Ej. 24.547.785-T">
+
+        <label for="cuentaCorriente">Núm. Cuenta Corriente:</label>
+        <input type="text" id="cuentaCorriente" name="cuentaCorriente" pattern="\d{4}-\d{4}-\d{2}-\d{10}" required placeholder="Ej. 0098-5098-76-9876754568">
+    
+        <label for="cuotaMensual">Cuota Mensual:</label>
+        <input type="number" id="cuotaMensual" name="cuotaMensual" min="0" step="0.01" required placeholder="Ej. 0,25">
+    
+        <label for="fechaNacimiento">Fecha Nacimiento:</label>
+        <input type="text" id="fechaNacimiento" name="fechaNacimiento" pattern="\d{2}/\d{2}/\d{4}" required placeholder="Ej. 12/11/1978">
+    
+        <label for="numHijos">Núm. Hijos:</label>
+        <input type="number" id="numHijos" name="numHijos" min="0" required placeholder="Ej. 2">
+    
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required placeholder="ejemplonombre@ono.com">
+    
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
